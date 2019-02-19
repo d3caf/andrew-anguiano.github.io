@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Gatsby Develop" type="JavascriptDebugType" uri="http://localhost:8000">
+    <method v="2">
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_Gatsby Develop" />
+    </method>
+  </configuration>
+</component>

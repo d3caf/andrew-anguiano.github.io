@@ -1,0 +1,125 @@
+@import '../_variables.scss';
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 6rem 0;
+  max-width: 75%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleContainer {
+  display: block;
+  align-self: flex-start;
+  h1 {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: calc(-25px - .25em);
+      width: 25px;
+      height: 90%;
+      background: white;
+      animation: blink .75s ease-in-out infinite alternate;
+    }
+  }
+  span.subTitle {
+    font-size: 1rem;
+    color: $purple;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  }
+}
+
+.introTextContainer {
+  background: darken($darkGray, 10);
+  border-radius: 3px;
+  padding: 1rem;
+  max-width: 700px;
+  p {
+    strong {
+      color: $purple;
+      margin-right: .75em;
+    }
+  }
+}
+
+.toolsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  img {
+    height: 100px;
+  }
+}
+
+.bgContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
+  width: 100%;
+  .bgLatestContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn .75s ease-in-out .8s forwards;
+    &.historical {
+      h1 {
+        color: $purple;
+        border-color: $purple;
+        transition: all .25s ease-in-out;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      font-family: $bodyFontFamily;
+      display: block;
+      text-align: center;
+      border: 2px solid $green;
+      border-radius: 3px;
+      padding: .75em;
+      transition: all .25s ease-in-out;
+      sup {
+        font-size: .25em;
+        vertical-align: top;
+      }
+      small {
+        display: block;
+        font-size: .5em;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: .2;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
