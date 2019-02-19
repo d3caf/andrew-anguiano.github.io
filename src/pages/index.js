@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import SEO from "../components/seo"
 
 import BgChart from '../components/bgchart';
-import baseStyles from '../base.module.scss';
+import baseStyles from '../base.scss';
 import indexStyles from './index.module.scss';
 
 class IndexPage extends Component {
