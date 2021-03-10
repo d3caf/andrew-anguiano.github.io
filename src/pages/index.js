@@ -50,7 +50,7 @@ class IndexPage extends Component {
         </div>
 
         <div className={indexStyles.introTextContainer}>
-          <p><strong>andrew@127.0.0.1/~ ></strong> Hi, I'm Andrew. I'm a 26 year old web developer living in the beautiful Midwest. I'm currently employed as a UI Engineer with <a href="https://www.amobee.com" target="_blank" rel="noreferrer noopener" style={{color: '#00b2cc'}}>Amobee</a>. </p>
+          <p><strong>andrew@127.0.0.1/~ ></strong> Hi, I'm Andrew. I'm a 26 year old web developer living in the beautiful Midwest. I'm currently employed as a Software Engineer at <a href="https://www.pff.com" target="_blank" rel="noreferrer noopener" style={{color: '#00b2cc'}}>PFF</a>. </p>
           <p><strong>andrew@127.0.0.1/~ ></strong> I love coffee, Vim, games, React, my little family, and many other very interesting and exciting things. Also, my pancreas doesn't work, so I've replaced it with a <a href="https://github.com/loopkit/loop" target="_blank" rel="noreferrer noopener">bionic one</a>.</p>
           <p><strong>andrew@127.0.0.1/~ ></strong> I'm always open to side projects, so feel free to drop me a note.</p>
         </div>
